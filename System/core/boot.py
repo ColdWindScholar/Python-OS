@@ -187,8 +187,10 @@ class boot:
 
         self.master = master
         self.screen = screen
-
-        Bootloader(self.master, time)
+        try:
+            Bootloader(self.master, time)
+        except (Exception, BaseException) as e:
+            KRNL_Bug_check(master, str(e), "#ffffff", "#000000")
 
         self.master.after(time + 1000, screen, self.master)
 
