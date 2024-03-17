@@ -76,7 +76,7 @@ class ColorizedArgsFormatter(logging.Formatter):
             color = ColorizedArgsFormatter.level_to_color[level]
             _format = fmt
             for fld in ColorizedArgsFormatter.level_fields:
-                search = "(%\(" + fld + "\).*?s)"
+                search = "(%\\(" + fld + "\\).*?s)"
                 _format = re.sub(search, f"{color}\\1{Color.RESET}", _format)
             formatter = logging.Formatter(_format)
             self.level_to_formatter[level] = formatter
