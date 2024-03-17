@@ -2,12 +2,11 @@
 
 import random
 from tkinter import *
-from tkinter import ttk
-
 from tkinter import Label
 from typing import Optional
 
 from Libs.pyLogger.Logger import Logger
+
 
 # UI Textbox class -> the class uses the Text widget -> UITextbox(master: Misc, size: tuple, colored_words: list of tuples (word, color), text: str)
 class UITextbox(Text):

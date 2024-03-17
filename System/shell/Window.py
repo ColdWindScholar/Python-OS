@@ -1,5 +1,3 @@
-
-from doctest import master
 from tkinter import *
 
 

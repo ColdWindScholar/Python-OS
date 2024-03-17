@@ -49,7 +49,7 @@ class Bootloader(Frame):
 
         # Make a list of frames
         self.frames = [
-            PhotoImage(file="Assets/Shell/Boot/Bootloader/Loading 2.gif", format="gif -index %i" % (i)) for i in range(self.frames_count)
+            PhotoImage(file="Assets/Shell/Boot/Bootloader/Loading 2.gif", format="gif -index %i" % i) for i in range(self.frames_count)
         ]
 
         # Show and update the frames

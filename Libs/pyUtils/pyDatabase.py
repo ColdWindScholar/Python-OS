@@ -9,6 +9,7 @@
 import sqlite3
 import os
 
+
 def isDigit(s):
     """
     Checks if the given string have a number digit.
@@ -21,6 +22,7 @@ def isDigit(s):
     except ValueError:
         return False
 
+
 def PythonizeValue(value):
     """
     Converts a value to a Python object.
@@ -29,7 +31,7 @@ def PythonizeValue(value):
     """
     if value == "None" or value == "none":
         return None
-    elif isDigit(value) == True:
+    elif isDigit(value):
         return int(value)
     elif value == "True" or value == "true":
         return True
@@ -37,6 +39,7 @@ def PythonizeValue(value):
         return False
     else:
         return value
+
 
 class DB:
     """
@@ -111,7 +114,6 @@ class DB:
                 value = i[2]
         conn.close()
         return PythonizeValue(value)
-
 
     def update(path: str, key: str, value: str | bool | int):
         """

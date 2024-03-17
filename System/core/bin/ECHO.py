@@ -1,5 +1,6 @@
 from ...shell.Components.UITextbox import UITextbox
 
+
 def ECHO(command: str, output: UITextbox) -> str:
     """ Prints a message or string on the screen """
 
@@ -11,7 +12,7 @@ def ECHO(command: str, output: UITextbox) -> str:
     message = command.split()[1:]
 
     # If the message is empty, will print a error message and return
-    if message == []:
+    if not message:
         output.append_colored("Error: No input specified \n", "#D63A35")
         return output.get_text()
 

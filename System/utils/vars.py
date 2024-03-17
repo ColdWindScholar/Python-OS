@@ -32,9 +32,9 @@ if platform.system() == "Windows":
     Cursor = "@" + "Assets/Cursors/Windows/Cursor.cur"
     XCursor = "@" + "Assets/Cursors/Windows/XCursor.cur"
     XCursor_2 = "@" + "Assets/Cursors/Windows/XCursor-2.cur"
-    Hand= "@" + "Assets/Cursors/Windows/Hand.cur"
+    Hand = "@" + "Assets/Cursors/Windows/Hand.cur"
     Hand_2 = "@" + "Assets/Cursors/Windows/Hand-2.cur"
-    Loading= "@" + "Assets/Cursors/Windows/Loading.cur"
+    Loading = "@" + "Assets/Cursors/Windows/Loading.cur"
 
 elif platform.system() == "Linux":
 
@@ -43,9 +43,9 @@ elif platform.system() == "Linux":
         Cursor = "@" + "Assets/Cursors/Linux/Cursor.xbm"
         XCursor = "@" + "Assets/Cursors/Linux/XCursor.xbm"
         XCursor_2 = "@" + "Assets/Cursors/Linux/XCursor-2.xbm"
-        Hand= "@" + "Assets/Cursors/Linux/Hand.xbm"
+        Hand = "@" + "Assets/Cursors/Linux/Hand.xbm"
         Hand_2 = "@" + "Assets/Cursors/Linux/Hand-2.xbm"
-        Loading= "@" + "Assets/Cursors/Linux/Loading.xbm"
+        Loading = "@" + "Assets/Cursors/Linux/Loading.xbm"
 
     else:
 
@@ -56,6 +56,6 @@ elif platform.system() == "Linux":
         Cursor = ""
         XCursor = ""
         XCursor_2 = ""
-        Hand= ""
+        Hand = ""
         Hand_2 = ""
-        Loading= ""
+        Loading = ""
